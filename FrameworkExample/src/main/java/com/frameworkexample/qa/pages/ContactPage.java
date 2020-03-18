@@ -8,8 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 public class ContactPage {
 
 	WebDriver driver;
-	public static final String GENDER_MALE = "M";
-	public static final String GENDER_FEMALE = "F";
+	public static final String HOSTING_YES= "Yes";
+	public static final String HOSTING_NO = "No";
 
 	public ContactPage(WebDriver driver) {
 		this.driver = driver;
@@ -26,11 +26,7 @@ public class ContactPage {
 	@FindBy(xpath = "//input[@name='email']")
 	private WebElement email;
 
-	@FindBy(xpath = "//input[@name='phone']") // "//input[@class='form-control
-												// ng-pristine ng-invalid
-												// ng-invalid-required
-												// ng-valid-pattern
-												// ng-touched']")
+	@FindBy(xpath = "//input[@name='phone']") 
 	private WebElement phone;
 
 	@FindBy(xpath = "//input[@name='address']")
@@ -99,23 +95,23 @@ public class ContactPage {
 	public void setprojectDesc(String projectdetails) {
 		projectdesc.sendKeys(projectdetails);
 	}
-	public void clickHostingYes() {
+	/*public void clickHostingYes() {
 		hostingyes.click();
 	}
 
 	public void clickHostingNo() {
 		hostingno.click();
-	}
+	}*/
 
 	public void clickSubmit() {
 		submit.click();
 	}
 
-	/*public void setGender(String gender) {
-		if (GENDER_MALE.equalsIgnoreCase(gender)) {
-			radiomale.click();
+	public void setHosting(String choice) {
+		if (HOSTING_YES.equalsIgnoreCase(choice)) {
+			hostingyes.click();
 		} else {
-			radiofemale.click();
+			hostingno.click();
 		}
-	}*/
+	}
 }

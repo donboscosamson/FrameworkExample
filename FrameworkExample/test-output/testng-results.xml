@@ -1,17 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2587" started-at="2020-03-18T01:31:35Z" finished-at="2020-03-18T01:31:37Z">
+  <suite name="Default suite" duration-ms="4829" started-at="2020-03-18T19:54:37Z" finished-at="2020-03-18T19:54:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2587" started-at="2020-03-18T01:31:35Z" finished-at="2020-03-18T01:31:37Z">
+    <test name="Default test" duration-ms="4829" started-at="2020-03-18T19:54:37Z" finished-at="2020-03-18T19:54:42Z">
       <class name="com.frameworkexample.qa.testcases.ContactTest">
-        <test-method status="PASS" signature="registrationFormTest()[pri:0, instance:com.frameworkexample.qa.testcases.ContactTest@5d0bf09b]" name="registrationFormTest" duration-ms="2564" started-at="2020-03-17T21:31:35Z" finished-at="2020-03-17T21:31:37Z">
+        <test-method status="PASS" signature="registrationFormTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.frameworkexample.qa.testcases.ContactTest@795509d9]" name="registrationFormTest" duration-ms="2068" started-at="2020-03-18T15:54:39Z" data-provider="ContactData" finished-at="2020-03-18T15:54:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jose]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nathan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[jose@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1245563342]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[aaaabbbb]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Nb]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[New Jersey]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[8654.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[website1]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Yes]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[detailsaaa]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registrationFormTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.frameworkexample.qa.testcases.ContactTest@5d0bf09b]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-03-17T21:31:37Z" finished-at="2020-03-17T21:31:37Z">
+        <test-method status="PASS" signature="registrationFormTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.frameworkexample.qa.testcases.ContactTest@795509d9]" name="registrationFormTest" duration-ms="1672" started-at="2020-03-18T15:54:41Z" data-provider="ContactData" finished-at="2020-03-18T15:54:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[don]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[samson]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[bose@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2345672345]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[sdfsss]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[dc]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Indiana]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[3667.0]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[webseite2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[No]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[detailsacxc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registrationFormTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.frameworkexample.qa.testcases.ContactTest@795509d9]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-03-18T15:54:42Z" finished-at="2020-03-18T15:54:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -48,8 +48,9 @@ public class TestBase {
 		}
 		driver.get(url);
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+	//	driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("Testbase done");
 	}
 	public String getPropValue(String key)
 	{

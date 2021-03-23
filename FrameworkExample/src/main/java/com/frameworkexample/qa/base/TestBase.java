@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -17,9 +18,13 @@ public class TestBase {
 
 	public TestBase() {
 		initialization();
+		
 	}
 
+	
 	public void loadProperty() {
+		
+		//Added comment Don
 		prop = new Properties();
 		FileInputStream fis = null;
 		try {
@@ -46,11 +51,21 @@ public class TestBase {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
+	try
+	{
+		
 		driver.get(url);
 		driver.manage().window().maximize();
-	//	driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		System.out.println("Log 4j intialization");
+		PropertyConfigurator.configure("log4j.properties");
 		System.out.println("Testbase done");
+	}catch(Exception e)
+	{
+		
+	}
+	
 	}
 	public String getPropValue(String key)
 	{
@@ -59,6 +74,11 @@ public class TestBase {
 			return prop.getProperty(key);
 		}
 		return null;
+	}
+
+	public WebDriver getDriver() {
+		// TODO Auto-generated method stub
+		return driver;
 	}
 	
 	
